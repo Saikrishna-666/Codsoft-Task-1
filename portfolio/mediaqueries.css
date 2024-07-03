@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    #hamburger-nav {
+        display: none;
+    }
+}
+
+/* Profile Section */
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+    }
+
+    .section__text {
+        margin-left: 0;
+    }
+}
+
+/* Common Sections */
+@media (max-width: 768px) {
+    .section-container,
+    .about-details-container,
+    .skills-details-container,
+    .projects-details-container,
+    .contact-info-upper-container {
+        flex-direction: column;
+    }
+
+    .details-container,
+    .skill-item,
+    .project-card,
+    .contact-info-container {
+        margin: 10px 0;
+    }
+}

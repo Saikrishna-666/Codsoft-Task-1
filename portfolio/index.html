@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Katla Sai Krishna</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Katla Sai Krishna</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="photo.png" alt="Katla Sai Krishna profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Katla Sai Krishna</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/SAI-KRISHNA-KATLA'" />
+                <img src="github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/saikrishna-666'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="photo.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor's in Computer Science<br />Master's in Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a passionate full-stack developer with experience in building and managing web applications.
+                        Proficient in frontend technologies such as HTML, CSS, and JavaScript, as well as backend frameworks like Django and Express.js.
+                        My expertise includes database management with MySQL and SQLite, and I am well-versed in using Git for version control.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text__p1">My Key Skills</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="skills-containers">
+                <div class="skill-item">
+                    <img src="html.png" alt="HTML icon" class="icon" />
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+                <div class="skill-item">
+                    <img src="css.png" alt="CSS icon" class="icon" />
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+                <div class="skill-item">
+                    <img src="javascript.png" alt="JavaScript icon" class="icon" />
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="mui.png" alt="Material-UI icon" class="icon" />
+                    <h3>Material-UI</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="django.png" alt="Django icon" class="icon" />
+                    <h3>Django</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <img src="mysql.png" alt="MySQL icon" class="icon" />
+                    <h3>MySQL</h3>
+                    <p>Experienced</p>
+                </div>
+                <div class="skill-item">
+                    <img src="git.png" alt="Git icon" class="icon" />
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+            <div class="project-card">
+                <img src="project-1.png" alt="Project 1" class="project-img" />
+                <h2 class="project-title">Portfolio Website</h2>
+                <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/katla-sai-krishna/portfolio'">GitHub</button>  
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project-2.png" alt="Project 2" class="project-img" />
+                <h2 class="project-title">E-commerce Platform</h2>
+                <p>Developed a full-featured e-commerce platform using Django, including product listings, shopping cart, and checkout process.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/katla-sai-krishna/e-commerce'">GitHub</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project-3.png" alt="Project 3" class="project-img" />
+                <h2 class="project-title">Blog Application</h2>
+                <p>A dynamic blog application built with React and Node.js, featuring user authentication and a content management system.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/katla-sai-krishna/blog'">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:abc@example.com">saikrishna@example.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/SAI-KRISHNA-KATLA">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="github.png" alt="GitHub icon" class="icon contact-icon" />
+                <p><a href="https://github.com/saikrishna-666">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Katla Sai Krishna. All rights reserved.</p>
+            <div class="footer-links">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
